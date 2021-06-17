@@ -25,8 +25,6 @@ const reducer = (state = INITIAL_STATE, action) => {
                 ...state,
                 darkMode: !state.darkMode
             }
-        case actionTypes.HYDRATE:
-            return action.payload
 
         default:
             return state;

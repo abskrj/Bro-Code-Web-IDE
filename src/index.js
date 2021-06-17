@@ -5,6 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './redux/store';
+import { PersistGate } from 'redux-persist/integration/react'
+import { CircularProgress } from '@material-ui/core';
 
 import "ace-builds/webpack-resolver";
 import "ace-builds/src-noconflict/mode-html";
@@ -23,6 +25,7 @@ import "ace-builds/src-noconflict/snippets/css";
 
 import 'ace-builds/src-min-noconflict/ext-searchbox';
 
+
 const ace = require('ace-builds/src-noconflict/ace');
 ace.config.set("basePath", "https://cdn.jsdelivr.net/npm/ace-builds@1.4.3/src-noconflict/");
 ace.config.setModuleUrl('ace/mode/javascript_worker', "https://cdn.jsdelivr.net/npm/ace-builds@1.4.3/src-noconflict/worker-javascript.js");
@@ -32,8 +35,10 @@ ace.config.setModuleUrl('ace/mode/html_worker', "https://cdn.jsdelivr.net/npm/ac
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
+    <Provider store={store.store}>
+      <PersistGate loading={<center><CircularProgress /></center>} persistor={store.persistor}>
         <App />
+      </PersistGate>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
