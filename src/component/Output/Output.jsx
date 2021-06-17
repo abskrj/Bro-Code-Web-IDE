@@ -2,6 +2,7 @@ import React from 'react';
 import './Output.scss';
 
 export default function Output() {
+   
     return (
         <div className='output'>
             <iframe

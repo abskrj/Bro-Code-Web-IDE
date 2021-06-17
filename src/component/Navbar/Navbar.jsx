@@ -17,12 +17,14 @@ const useStyles = makeStyles((theme) => ({
     nav: {
         display: 'flex',
         flexDirection: 'row',
-        backgroundColor: '#FF75A0'
+        backgroundColor: '#FF75A0',
+        padding: 6
     },
     navDark: {
         display: 'flex',
         flexDirection: 'row',
-        backgroundColor: '#161D6F'
+        backgroundColor: '#161D6F',
+        padding: 6
     },
     btn: {
         color: 'white'
@@ -30,7 +32,6 @@ const useStyles = makeStyles((theme) => ({
     formControl: {
         margin: 1,
         minWidth: 120,
-        marginLeft: 10
     },
     select: {
         color: '#fff'
