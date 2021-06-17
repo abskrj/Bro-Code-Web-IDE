@@ -5,7 +5,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './redux/store';
-import { PersistGate } from 'redux-persist/integration/react'
 
 import "ace-builds/webpack-resolver";
 import "ace-builds/src-noconflict/mode-html";
@@ -33,10 +32,8 @@ ace.config.setModuleUrl('ace/mode/html_worker', "https://cdn.jsdelivr.net/npm/ac
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store.store}>
-      <PersistGate loading={null} persistor={store.persistor}>
+    <Provider store={store}>
         <App />
-      </PersistGate>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')

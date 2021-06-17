@@ -1,8 +1,8 @@
 const downloadCode = (code) => {
     const element = document.createElement("a");
-    const file = new Blob([code], { type: 'text/plain' });
+    const file = new Blob([code], { type: 'text/html' });
     element.href = URL.createObjectURL(file);
-    element.download = "download.txt";
+    element.download = "bro-code.html";
     document.body.appendChild(element);
     element.click();
 }

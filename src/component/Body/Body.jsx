@@ -1,9 +1,8 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import TabPanel from '../TabPanel/TabPanel';
 import AceEditor from "react-ace";
 
-import { onUpdateCSS, onUpdateHTML, onUpdateJS } from '../../redux/action';
+import { onUpdateCode } from '../../redux/action';
 import config from '../../constants/editorConfig';
 import { Grid, makeStyles } from '@material-ui/core';
 import Output from '../Output/Output';
@@ -28,64 +27,39 @@ const useStyles = makeStyles({
 export default function Body() {
     const classes = useStyles();
 
-    const currentTab = useSelector(state => state.currentTab);
+    const lang = useSelector(state => state.lang);
     const code = useSelector(state => state.code);
     const darkMode = useSelector(state => state.darkMode);
 
     const dispatch = useDispatch();
 
+    const getMode = () => {
+        if (lang === 'Python3') return lang.slice(0, -1).toLowerCase();
+        return lang.toLowerCase();
+    };
+
+    const handleChange = (code) => {
+        dispatch(onUpdateCode(lang, code));
+    }
+
     return (
         <div className={darkMode ? classes.rootDark : classes.root}>
             <Grid container spacing={1}>
                 <Grid item xs={12} sm={6}>
-                    <TabPanel value={currentTab} index={0}>
-                        <AceEditor
-                            mode="html"
-                            theme={darkMode ? 'cobalt' : 'github'}
-                            enableBasicAutocompletion={true}
-                            enableLiveAutocompletion={true}
-                            enableSnippets={true}
-                            showLineNumbers={true}
-                            fontSize={18}
-                            value={code.html}
-                            onChange={(_n) => dispatch(onUpdateHTML(_n))}
-                            setOptions={config}
-                            className={classes.editor}
-                            focus={true}
-                        />
-                    </TabPanel>
-                    <TabPanel value={currentTab} index={1}>
-                        <AceEditor
-                            mode="css"
-                            theme={darkMode ? 'cobalt' : 'github'}
-                            enableBasicAutocompletion={true}
-                            enableLiveAutocompletion={true}
-                            enableSnippets={true}
-                            showLineNumbers={true}
-                            fontSize={18}
-                            value={code.css}
-                            onChange={(_n) => dispatch(onUpdateCSS(_n))}
-                            setOptions={config}
-                            className={classes.editor}
-                            focus={true}
-                        />
-                    </TabPanel>
-                    <TabPanel value={currentTab} index={2}>
-                        <AceEditor
-                            mode="javascript"
-                            theme={darkMode ? 'cobalt' : 'github'}
-                            enableBasicAutocompletion={true}
-                            enableLiveAutocompletion={true}
-                            enableSnippets={true}
-                            showLineNumbers={true}
-                            fontSize={18}
-                            value={code.js}
-                            onChange={(_n) => dispatch(onUpdateJS(_n))}
-                            setOptions={config}
-                            className={classes.editor}
-                            focus={true}
-                        />
-                    </TabPanel>
+                    <AceEditor
+                        mode={getMode()}
+                        theme={darkMode ? 'cobalt' : 'github'}
+                        enableBasicAutocompletion={true}
+                        enableLiveAutocompletion={true}
+                        enableSnippets={true}
+                        showLineNumbers={true}
+                        fontSize={18}
+                        value={code[lang] ?? ""}
+                        onChange={handleChange}
+                        setOptions={config}
+                        className={classes.editor}
+                        focus={true}
+                    />
                 </Grid>
 
                 <Grid item xs={12} sm={6}>

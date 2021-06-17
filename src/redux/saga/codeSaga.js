@@ -1,32 +1,22 @@
 import { all, call, debounce, put } from 'redux-saga/effects';
-import { updateCSS, updateHTML, updateJS } from '../action';
+import mergeAllCode from '../../utils/htmlParser';
+import showOutput from '../../utils/showOutput';
+import { updateCode } from '../action';
 import actionTypes from '../actionTypes';
+import store from '../store';
 
 
-function* updateHTMLWorker({ payload }) {
-    yield put(updateHTML(payload));
+
+function* updateCodeWorker({ payload }) {
+    yield put(updateCode(payload.lang, payload.code));
+    const state = store.getState();
+    showOutput(mergeAllCode(state.code?.html, state.code?.css, state.code?.js));
 };
 
-function* updateCSSWorker({ payload }) {
-    yield put(updateCSS(payload));
-};
-
-function* updateJSWorker({ payload }) {
-    yield put(updateJS(payload));
-};
-
-function* onUpdateHTML() {
-    yield debounce(1000, actionTypes.ON_UPDATE_HTML, updateHTMLWorker);
-};
-
-function* onUpdateCSS() {
-    yield debounce(1000, actionTypes.ON_UPDATE_CSS, updateCSSWorker);
-};
-
-function* onUpdateJS() {
-    yield debounce(1000, actionTypes.ON_UPDATE_JS, updateJSWorker);
+function* onUpdateCode() {
+    yield debounce(1000, actionTypes.ON_UPDATE_CODE, updateCodeWorker);
 };
 
 export default function* codeSaga() {
-    yield all([call(onUpdateHTML), call(onUpdateCSS), call(onUpdateJS)]);
+    yield all([call(onUpdateCode)]);
 }

@@ -1,39 +1,24 @@
 import actionTypes from "./actionTypes";
 
 const INITIAL_STATE = {
-    currentTab: 0,
-    code: {
-        html: "",
-        css: "",
-        js: ""
-    },
+    lang: "html",
+    code: {},
     darkMode: false
 }
 
 const reducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
-        case actionTypes.CHANGE_TAB:
+        case actionTypes.CHANGE_LANG:
             return {
                 ...state,
-                currentTab: action.payload
+                lang: action.payload
             };
-        
-        case actionTypes.UPDATE_HTML:
+
+        case actionTypes.UPDATE_CODE:
+            const codeLang = action.payload.lang;
             return {
                 ...state,
-                code: {...state.code, html: action.payload}
-            }
-        
-        case actionTypes.UPDATE_CSS:
-            return {
-                ...state,
-                code: {...state.code, css: action.payload}
-            }
-        
-        case actionTypes.UPDATE_JS:
-            return {
-                ...state,
-                code: {...state.code, js: action.payload}
+                code: { ...state.code, [codeLang]: action.payload.code }
             }
         case actionTypes.TOGGLE_THEME:
             return {
