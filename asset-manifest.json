@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Bro-Code-Web-IDE/static/css/main.daaeb27b.chunk.css",
-    "main.js": "/Bro-Code-Web-IDE/static/js/main.cb59f08a.chunk.js",
-    "main.js.map": "/Bro-Code-Web-IDE/static/js/main.cb59f08a.chunk.js.map",
-    "runtime-main.js": "/Bro-Code-Web-IDE/static/js/runtime-main.0bca0c80.js",
-    "runtime-main.js.map": "/Bro-Code-Web-IDE/static/js/runtime-main.0bca0c80.js.map",
-    "static/js/2.f6867421.chunk.js": "/Bro-Code-Web-IDE/static/js/2.f6867421.chunk.js",
-    "static/js/2.f6867421.chunk.js.map": "/Bro-Code-Web-IDE/static/js/2.f6867421.chunk.js.map",
-    "static/js/3.c7085014.chunk.js": "/Bro-Code-Web-IDE/static/js/3.c7085014.chunk.js",
-    "static/js/3.c7085014.chunk.js.map": "/Bro-Code-Web-IDE/static/js/3.c7085014.chunk.js.map",
+    "main.css": "/Bro-Code-Web-IDE/static/css/main.0877dcc8.chunk.css",
+    "main.js": "/Bro-Code-Web-IDE/static/js/main.6b630fdc.chunk.js",
+    "main.js.map": "/Bro-Code-Web-IDE/static/js/main.6b630fdc.chunk.js.map",
+    "runtime-main.js": "/Bro-Code-Web-IDE/static/js/runtime-main.1fef10de.js",
+    "runtime-main.js.map": "/Bro-Code-Web-IDE/static/js/runtime-main.1fef10de.js.map",
+    "static/js/2.69c3e3f6.chunk.js": "/Bro-Code-Web-IDE/static/js/2.69c3e3f6.chunk.js",
+    "static/js/2.69c3e3f6.chunk.js.map": "/Bro-Code-Web-IDE/static/js/2.69c3e3f6.chunk.js.map",
+    "static/js/3.7dad9e01.chunk.js": "/Bro-Code-Web-IDE/static/js/3.7dad9e01.chunk.js",
+    "static/js/3.7dad9e01.chunk.js.map": "/Bro-Code-Web-IDE/static/js/3.7dad9e01.chunk.js.map",
     "mode-livescript.js": "/Bro-Code-Web-IDE/00f32d088488515ac84b1ffe7fc0ec0d.js",
     "ftl.js": "/Bro-Code-Web-IDE/024358f71f8096dd8052103dced05dbc.js",
     "mode-terraform.js": "/Bro-Code-Web-IDE/02a3067bd4d8feab048883fbaff9722c.js",
@@ -424,13 +424,13 @@
     "smarty.js": "/Bro-Code-Web-IDE/ff6e85bb753b94d4add40e79a70c2875.js",
     "io.js": "/Bro-Code-Web-IDE/ffb285847c77432bb38e9fbf9789d323.js",
     "index.html": "/Bro-Code-Web-IDE/index.html",
-    "static/css/main.daaeb27b.chunk.css.map": "/Bro-Code-Web-IDE/static/css/main.daaeb27b.chunk.css.map",
-    "static/js/2.f6867421.chunk.js.LICENSE.txt": "/Bro-Code-Web-IDE/static/js/2.f6867421.chunk.js.LICENSE.txt"
+    "static/css/main.0877dcc8.chunk.css.map": "/Bro-Code-Web-IDE/static/css/main.0877dcc8.chunk.css.map",
+    "static/js/2.69c3e3f6.chunk.js.LICENSE.txt": "/Bro-Code-Web-IDE/static/js/2.69c3e3f6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0bca0c80.js",
-    "static/js/2.f6867421.chunk.js",
-    "static/css/main.daaeb27b.chunk.css",
-    "static/js/main.cb59f08a.chunk.js"
+    "static/js/runtime-main.1fef10de.js",
+    "static/js/2.69c3e3f6.chunk.js",
+    "static/css/main.0877dcc8.chunk.css",
+    "static/js/main.6b630fdc.chunk.js"
   ]
 }
