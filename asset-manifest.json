@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Bro-Code-Web-IDE/static/css/main.0877dcc8.chunk.css",
-    "main.js": "/Bro-Code-Web-IDE/static/js/main.602cd5ca.chunk.js",
-    "main.js.map": "/Bro-Code-Web-IDE/static/js/main.602cd5ca.chunk.js.map",
-    "runtime-main.js": "/Bro-Code-Web-IDE/static/js/runtime-main.fbf5bea2.js",
-    "runtime-main.js.map": "/Bro-Code-Web-IDE/static/js/runtime-main.fbf5bea2.js.map",
-    "static/js/2.a6e133f8.chunk.js": "/Bro-Code-Web-IDE/static/js/2.a6e133f8.chunk.js",
-    "static/js/2.a6e133f8.chunk.js.map": "/Bro-Code-Web-IDE/static/js/2.a6e133f8.chunk.js.map",
-    "static/js/3.05cf6b53.chunk.js": "/Bro-Code-Web-IDE/static/js/3.05cf6b53.chunk.js",
-    "static/js/3.05cf6b53.chunk.js.map": "/Bro-Code-Web-IDE/static/js/3.05cf6b53.chunk.js.map",
+    "main.js": "/Bro-Code-Web-IDE/static/js/main.90effb1f.chunk.js",
+    "main.js.map": "/Bro-Code-Web-IDE/static/js/main.90effb1f.chunk.js.map",
+    "runtime-main.js": "/Bro-Code-Web-IDE/static/js/runtime-main.4fff7e1b.js",
+    "runtime-main.js.map": "/Bro-Code-Web-IDE/static/js/runtime-main.4fff7e1b.js.map",
+    "static/js/2.9f7a07aa.chunk.js": "/Bro-Code-Web-IDE/static/js/2.9f7a07aa.chunk.js",
+    "static/js/2.9f7a07aa.chunk.js.map": "/Bro-Code-Web-IDE/static/js/2.9f7a07aa.chunk.js.map",
+    "static/js/3.5356328e.chunk.js": "/Bro-Code-Web-IDE/static/js/3.5356328e.chunk.js",
+    "static/js/3.5356328e.chunk.js.map": "/Bro-Code-Web-IDE/static/js/3.5356328e.chunk.js.map",
     "mode-livescript.js": "/Bro-Code-Web-IDE/00f32d088488515ac84b1ffe7fc0ec0d.js",
     "ftl.js": "/Bro-Code-Web-IDE/024358f71f8096dd8052103dced05dbc.js",
     "mode-terraform.js": "/Bro-Code-Web-IDE/02a3067bd4d8feab048883fbaff9722c.js",
@@ -425,12 +425,12 @@
     "io.js": "/Bro-Code-Web-IDE/ffb285847c77432bb38e9fbf9789d323.js",
     "index.html": "/Bro-Code-Web-IDE/index.html",
     "static/css/main.0877dcc8.chunk.css.map": "/Bro-Code-Web-IDE/static/css/main.0877dcc8.chunk.css.map",
-    "static/js/2.a6e133f8.chunk.js.LICENSE.txt": "/Bro-Code-Web-IDE/static/js/2.a6e133f8.chunk.js.LICENSE.txt"
+    "static/js/2.9f7a07aa.chunk.js.LICENSE.txt": "/Bro-Code-Web-IDE/static/js/2.9f7a07aa.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.fbf5bea2.js",
-    "static/js/2.a6e133f8.chunk.js",
+    "static/js/runtime-main.4fff7e1b.js",
+    "static/js/2.9f7a07aa.chunk.js",
     "static/css/main.0877dcc8.chunk.css",
-    "static/js/main.602cd5ca.chunk.js"
+    "static/js/main.90effb1f.chunk.js"
   ]
 }
