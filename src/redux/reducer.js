@@ -2,7 +2,11 @@ import actionTypes from "./actionTypes";
 
 const INITIAL_STATE = {
     lang: "html",
-    code: {},
+    code: {
+        html: "",
+        css: "",
+        javascript: ""
+    },
     darkMode: false
 }
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { useSelector } from 'react-redux';
 
 export default function Header() {
     const darkMode = useSelector(state => state.darkMode);
