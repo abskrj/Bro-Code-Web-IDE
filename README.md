@@ -1,12 +1,13 @@
 # Bro Code Web IDE 😃
 
 ## Features
-1. Mobile Responsive
-2. Dark/Light Mode
-3. Different Tabs for HTML/CSS/JS
-4. Output on same window
-5. Code is automatically saved in browser
-6. Download code in a file
+1. Code Intellisence
+2. Mobile Responsive
+3. Dark/Light Mode
+4. Different Tabs for HTML/CSS/JS
+5. Output on same window
+6. Code is automatically saved in browser
+7. Download code in a file
 
 ## Libraries Used
 1. React
